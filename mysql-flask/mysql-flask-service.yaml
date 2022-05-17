@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    template.openshift.io/template-instance-owner: 03ffbe18-da78-462f-8dde-2b8f707ca748
+  name: mysql-flask
+spec:
+  ports:
+  - name: mysql
+    port: 3306
+  selector:
+    name: mysql-flask

@@ -1,0 +1,10 @@
+oc get dc mysql-flask -o yaml -n honda | oc neat > mysql-flask-deployment.yaml
+
+
+oc get service mysql-flask -o yaml -n honda | oc neat > mysql-flask-service.yaml
+
+
+oc get secret mysql-flask -o yaml -n honda | oc neat > mysql-flask-secret.yaml
+
+
+oc get pvc mysql-flask -o yaml -n honda | oc neat > mysql-flask-pvc.yaml

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    template.openshift.io/template-instance-owner: 03ffbe18-da78-462f-8dde-2b8f707ca748
+  name: mysql-flask
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
