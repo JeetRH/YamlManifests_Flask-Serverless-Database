@@ -7,3 +7,5 @@ oc get route flask-hello-world -o yaml -n honda | oc neat > flask-hello-world-ro
 oc get is flask-hello-world -o yaml -n honda | oc neat > flask-hello-world-imagestream.yaml
 
 oc get bc flask-hello-world -o yaml -n honda | oc neat > flask-hello-world-buildconfig.yaml
+
+oc get secret flask-hello-world-generic-webhook-secret -o yaml -n honda | oc neat > flask-hello-world-secret.yaml
